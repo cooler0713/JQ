@@ -21,6 +21,7 @@
         <button id="addClass">add Class</button>
         <button id="rmClass">rm Class</button>
         <button id="toggleClass">toggle Class</button>
+        <button id="checkClass">check Class</button>
 
         <div class="box"></div>
 
@@ -34,6 +35,15 @@
             });
             $("#toggleClass").click(function () {
                 $(".box").toggleClass("active");
+            });
+
+            $("#checkClass").click(function () {
+                console.log($(".box").hasClass("active"));
+                if ($(".box").hasClass("active")) {
+                    $(".box").removeClass("active");
+                } else {
+                    $(".box").addClass("active");
+                }
             });
         </script>
     </body>
