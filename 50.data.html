@@ -7,13 +7,14 @@
         <title>data</title>
     </head>
     <body>
-        <div class="box" data-price="200" data-product-name="pen" data-fire ="777"></div>
+        <div class="box" data-price="200" data-product-name="pen"></div>
 
         <script src="./js/jquery-3.6.0.min.js"></script>
         <script>
+            $(".box").data("price", "500");
+            $(".box").data("product-name", "pencil");
             console.log("price", $(".box").data("price"));
             console.log("price", $(".box").data("product-name"));
-            console.log("fire", $(".box").data("fire"));
         </script>
     </body>
 </html>
